@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+
+namespace PracticeTwo.Controllers
+{
+    public class StudentController : Controller
+    {
+        public string Index()
+        {
+            return "Hello From Student Controller Index Action";
+        }
+
+        public ActionResult Details()
+        {
+            return Content("Hello From Student Controller Details Action");
+        }
+
+        public ActionResult Show()
+        {
+            return Content("Hello From Student Controller Show Action");
+
+        }
+    }
+}
